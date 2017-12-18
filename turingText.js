@@ -102,5 +102,5 @@ function help() {
 }
 
 function about() {
-  alert('This is a web development programming exercise demonstrating a simple chaterbot built with javascript over the course of a weekend. I hope you enjoy it but I doubt you will find it at all helpful. You can find the sourcecode at the github repository at: ');
+  alert('This is a web development programming exercise demonstrating a simple chatterbot built with javascript over the course of a weekend. I hope you enjoy it but I doubt you will find it at all helpful. You can find the sourcecode at the github repository at: https://github.com/NixRaven/TuringHelpdesk');
 }
