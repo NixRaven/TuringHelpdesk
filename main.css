@@ -1,0 +1,88 @@
+body {
+  font-family: arial;
+}
+
+.heading {
+  height: 100px;
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+
+.heading h1 {
+  float: left;
+}
+
+.heading p {
+  float: right;
+}
+
+.conversation {
+  background-color: #f7f7f7;
+  padding-left: 100px;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.chat-entry-help, .chat-entry-usr {
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 40%;
+}
+  
+
+.chat-entry-help {
+  background-color: #d9d9f7;
+  margin-left: 0px;
+}
+
+.chat-entry-usr {
+  background-color: gray;
+  margin-left: 25%;
+}
+
+.chat-log-user {
+  font-weight: bold;
+}
+
+.entry {
+  width: 100%;
+}
+
+.entry-box {
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 90%;
+  height: 100px;
+  padding: 5px;
+}
+
+.entry-controls {
+  list-style: none;
+  display: inline-block;
+}
+
+.entry-btn {
+  font-weight: bold;
+  text-align: center;
+  background-color: navy;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.entry-btn:hover {
+  background-color: blue;
+}
+
+@media only screen and (max-width: 400px) {
+  .conversation {
+    padding-left: 0px;
+  }
+}

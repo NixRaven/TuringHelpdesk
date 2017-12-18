@@ -1,0 +1,49 @@
+<!DOCTYPE html5>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Turing Helpdesk</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta name="description" content="Welcome to the Turing Helpdesk! We will be happy to help you with whatever issue you may be having.">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="turingText.js"></script>
+    <script>
+      function initListener() {
+        if (document.getElementById('entryBtn').addEventListener) {
+          document.getElementById('entryBtn').addEventListener('click',function() {newUsrMessage();});
+          document.getElementById('help').addEventListener('click',help);
+          document.getElementById('about').addEventListener('click',about);
+        } else if (document.getElementById('entryBtn').attachEvent) {
+          document.getElementById('entryBtn').attachEvent('onclick',function() {newUsrMessage();});
+          document.getElementById('help').attachEvent('onclick',help);
+          document.getElementById('about').attachEvent('onclick',help);
+        }
+      }
+      
+      window.onload = function() {
+        initListener();
+      };
+    </script>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Welcome to the Turing Helpdesk</h1>
+      <p id="about" class="entry-btn">about</p>
+    </div>
+    <div id="chatLog" class="conversation">
+      <div class="chat-entry-help">
+        <p class="chat-log-user">Msg1. Helpdesk:</p>
+        <p class="chat-text">Hi! Welcome to the Turing Helpdesk. What can we help you with today?"</p>
+      </div>
+    </div>
+    <div class="entry">
+      <h2 class="entry-heading">Enter questions here</h2>
+      <textarea id="inputBox" class="entry-box" name"entryTxt" type="text" max-length="1000"></textarea>
+      <ul class="entry-controls">
+        <li id="entryBtn" class="entry-btn">Send =></li>
+        <li id="help" class="entry-btn">?</li>
+      </ul>
+    </div>
+  </body>
+</html>
